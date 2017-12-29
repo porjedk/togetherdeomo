@@ -89,7 +89,7 @@
             "input": true
         },
         {
-            "custom": "var url = 'https://requestb.in/1mvtofl1?name';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \n  \nconsole.log("success");\n};  \n }).fail(function (error) {  \n console.log(error);   });",
+            "custom": "var url = 'https://requestb.in/1mvtofl1?name';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \n  \nconsole.log(data);\n};  \n }).fail(function (error) {  \n console.log(error);   });",
             "properties": {
                 "": ""
             },
