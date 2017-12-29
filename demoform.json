@@ -111,7 +111,7 @@
             "properties": {
                 "": ""
             },
-            "custom": "var url = 'https://requestb.in/1mvtofl1?name';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\n data: {\nname: form.submission.data.name,  \nmessage: form.submission.data.message,    \noutput: value  \n}\n};  \n }).fail(function (error) {  \n console.log(error);   });"
+            "custom": "var url = 'https://requestb.in/1mvtofl1?name=';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\n data: {\nname: form.submission.data.name,  \nmessage: form.submission.data.message,    \noutput: value  \n}\n};  \n }).fail(function (error) {  \n console.log(error);   });"
         }
     ],
     "owner": "59b0f7ea678919000775f784",
