@@ -1,0 +1,134 @@
+{
+    "_id": "5a45ca98dd3ffa000134a3eb",
+    "machineName": "cmyolbqzwhgnyjz:requestBin",
+    "modified": "2017-12-29T04:56:50.762Z",
+    "title": "RequestBin",
+    "display": "form",
+    "settings": {},
+    "name": "requestBin",
+    "path": "requestbin",
+    "project": "59b0f9116d85560007c2823b",
+    "_vid": 0,
+    "revisions": "",
+    "created": "2017-12-29T04:54:48.182Z",
+    "components": [
+        {
+            "lockKey": true,
+            "isNew": false,
+            "properties": {
+                "": ""
+            },
+            "tags": [],
+            "labelPosition": "top",
+            "hideLabel": false,
+            "type": "textfield",
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": ""
+            },
+            "validate": {
+                "customPrivate": false,
+                "custom": "",
+                "pattern": "",
+                "maxLength": "",
+                "minLength": "",
+                "required": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "",
+            "key": "name",
+            "label": "Name",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true
+        },
+        {
+            "isNew": false,
+            "properties": {
+                "": ""
+            },
+            "tags": [],
+            "labelPosition": "top",
+            "hideLabel": false,
+            "type": "textfield",
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": ""
+            },
+            "validate": {
+                "customPrivate": false,
+                "custom": "",
+                "pattern": "",
+                "maxLength": "",
+                "minLength": "",
+                "required": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "",
+            "key": "message",
+            "label": "Message",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true
+        },
+        {
+            "custom": "var url = 'https://requestb.in/1mvtofl1?name';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\n data: {\nname: form.submission.data.name,  \nmessage: form.submission.data.message\n}\n};  \n }).fail(function (error) {  \n console.log(error);   });",
+            "properties": {
+                "": ""
+            },
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": ""
+            },
+            "tags": [],
+            "hideLabel": false,
+            "type": "button",
+            "theme": "primary",
+            "disableOnInvalid": false,
+            "action": "custom",
+            "block": false,
+            "rightIcon": "",
+            "leftIcon": "",
+            "size": "md",
+            "key": "submit",
+            "tableView": false,
+            "label": "Submit",
+            "input": true
+        }
+    ],
+    "owner": "59b0f7ea678919000775f784",
+    "submissionAccess": [],
+    "access": [
+        {
+            "type": "read_all",
+            "roles": [
+                "59b0f9116d85560007c2823c",
+                "59b0f9116d85560007c2823d",
+                "59b0f9116d85560007c2823e"
+            ]
+        }
+    ],
+    "tags": [],
+    "type": "form"
+}

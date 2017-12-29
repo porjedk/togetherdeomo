@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JA Demo</title>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='https://unpkg.com/formiojs@latest/dist/formio.full.min.css'>
+		<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type='text/javascript'>
+			window.onload = function() {
+				var form = new FormioForm(document.getElementById('formio'));
+				$.getJSON("./demoform.json", function(json) {
+					form.form = json;
+				});	
+			};
+		</script>		
+	</head>
+	<body>
+		<div class="col-xs-3"></div>
+		<div class="col-xs-6" id='formio'></div>
+		<div class="col-xs-3"></div>
+	</body>
+</html>
