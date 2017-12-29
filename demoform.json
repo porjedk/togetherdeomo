@@ -512,7 +512,7 @@
                 "margin-bottom": "20px"
             },
             "tooltip": "Send the suggestion to the box.",
-            "custom": "var settings = {\n  \"async\": true,\n  \"crossDomain\": true,\n  \"url\": \"https://requestb.in/1mvtofl1\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"content-type\": \"application/json\"\n    \"cache-control\": \"no-cache\"\n  },\n  \"processData\": false,\n  \"data\": \"{\\n\\t\\\"a\\\": \" +form.submission.data.name+ \",\\n\\t\\\"b\\\": \" +form.submission.data.suggestion+ \"\\n}\"\n}\n\n$.ajax(settings).done(function (data) {\nvar value = JSON.stringify(data.value);   \nform.submission = {\n data: {    \noperation: form.submission.data.operation,  \na: form.submission.data.a,  \nb: form.submission.data.b,    \noutput: value\n}\n} \n});"
+            "custom": "var settings = {\n  \"async\": true,\n  \"crossDomain\": true,\n  \"url\": \"https://requestb.in/1mvtofl1\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"content-type\": \"application/json\"\n    \"cache-control\": \"no-cache\"\n  },\n  \"processData\": false,\n  \"data\": \"{\\n\\t\\\"name\\\": \" +form.submission.data.name+ \",\\n\\t\\\"suggestion\\\": \" +form.submission.data.suggestion+ \"\\n}\"\n}\n\n$.ajax(settings).done(function (data) {\nvar value = JSON.stringify(data.value);   \nform.submission = {\n data: {    \nname: form.submission.data.name,  \nsuggesstion: form.submission.data.suggestion,    \noutput: value\n}\n} \n});"
         },
         {
             "properties": {
