@@ -1,7 +1,7 @@
 {
     "_id": "5a45dc2b445db0000178e276",
     "machineName": "cmyolbqzwhgnyjz:testRequestBin",
-    "modified": "2017-12-29T06:09:51.594Z",
+    "modified": "2017-12-29T06:14:34.440Z",
     "title": "TestRequestBin",
     "display": "form",
     "settings": {},
@@ -13,105 +13,105 @@
     "created": "2017-12-29T06:09:47.753Z",
     "components": [
         {
-            "properties": {
-                "": ""
-            },
-            "tags": [],
-            "labelPosition": "top",
-            "hideLabel": false,
-            "type": "textfield",
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "validate": {
-                "customPrivate": false,
-                "custom": "",
-                "pattern": "",
-                "maxLength": "",
-                "minLength": "",
-                "required": false
-            },
-            "clearOnHide": true,
-            "hidden": false,
-            "persistent": true,
-            "unique": false,
-            "protected": false,
-            "defaultValue": "",
-            "multiple": false,
-            "suffix": "",
-            "prefix": "",
-            "placeholder": "",
-            "key": "name",
+            "input": true,
+            "tableView": true,
+            "inputType": "text",
+            "inputMask": "",
             "label": "Name",
-            "inputMask": "",
-            "inputType": "text",
-            "tableView": true,
-            "input": true
-        },
-        {
-            "properties": {
-                "": ""
-            },
-            "tags": [],
-            "labelPosition": "top",
-            "hideLabel": false,
-            "type": "textfield",
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "validate": {
-                "customPrivate": false,
-                "custom": "",
-                "pattern": "",
-                "maxLength": "",
-                "minLength": "",
-                "required": false
-            },
-            "clearOnHide": true,
-            "hidden": false,
-            "persistent": true,
-            "unique": false,
-            "protected": false,
-            "defaultValue": "",
-            "multiple": false,
-            "suffix": "",
-            "prefix": "",
+            "key": "name",
             "placeholder": "",
-            "key": "message",
-            "label": "Message",
-            "inputMask": "",
-            "inputType": "text",
-            "tableView": true,
-            "input": true
+            "prefix": "",
+            "suffix": "",
+            "multiple": false,
+            "defaultValue": "",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "type": "textfield",
+            "hideLabel": false,
+            "labelPosition": "top",
+            "tags": [],
+            "properties": {
+                "": ""
+            }
         },
         {
-            "custom": "var settings = {\n \"async\": true,\n \"crossDomain\": true,\n \"url\": \"https://requestb.in/1mvtofl1\",\n \"method\": \"POST\",\n \"headers\": {\n   \"content-type\": \"application/json\",\n   \"cache-control\": \"no-cache\"\n },\n \"processData\": false,\n \"data\": \"{\\n\\t\\\"name\\\": \" +form.submission.data.name+ \",\\n\\t\\\"message\\\": \" +form.submission.data.message+ \"\\n}\"\n}\n\n$.ajax(settings).done(function (data) {\nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\ndata: {    \nname: form.submission.data.name,  \nmessage: form.submission.data.message,    \n}\n} \n});",
+            "input": true,
+            "tableView": true,
+            "inputType": "text",
+            "inputMask": "",
+            "label": "Message",
+            "key": "message",
+            "placeholder": "",
+            "prefix": "",
+            "suffix": "",
+            "multiple": false,
+            "defaultValue": "",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "type": "textfield",
+            "hideLabel": false,
+            "labelPosition": "top",
+            "tags": [],
+            "properties": {
+                "": ""
+            }
+        },
+        {
+            "input": true,
+            "label": "Submit",
+            "tableView": false,
+            "key": "submit",
+            "size": "md",
+            "leftIcon": "",
+            "rightIcon": "",
+            "block": false,
+            "action": "custom",
+            "disableOnInvalid": false,
+            "theme": "primary",
+            "type": "button",
+            "hideLabel": false,
+            "tags": [],
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
             "properties": {
                 "": ""
             },
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "tags": [],
-            "hideLabel": false,
-            "type": "button",
-            "theme": "primary",
-            "disableOnInvalid": false,
-            "action": "custom",
-            "block": false,
-            "rightIcon": "",
-            "leftIcon": "",
-            "size": "md",
-            "key": "submit",
-            "tableView": false,
-            "label": "Submit",
-            "input": true
+            "custom": "var url = 'https://requestb.in/1mvtofl1?name';      \nurl += form.submission.data.name;\nurl += '&message=';      \nurl += form.submission.data.message;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"POST\"\n      }).done(function (data) {        \nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\n data: {\nname: form.submission.data.name,  \nmessage: form.submission.data.message,    \noutput: value  \n}\n};  \n }).fail(function (error) {  \n console.log(error);   });"
         }
     ],
     "owner": "59b0f7ea678919000775f784",
