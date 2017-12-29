@@ -1,810 +1,128 @@
 {
-    "_id": "5a44832a527ece000139e418",
-    "machineName": "ghlbuzhqgiynscp:fitmKmutnbSuggestion",
-    "modified": "2017-12-29T04:46:50.899Z",
-    "title": "FITM-KMUTNB Suggestion Box",
+    "_id": "5a45dc2b445db0000178e276",
+    "machineName": "cmyolbqzwhgnyjz:testRequestBin",
+    "modified": "2017-12-29T06:09:51.594Z",
+    "title": "TestRequestBin",
     "display": "form",
     "settings": {},
-    "name": "fitmKmutnbSuggestionBox",
-    "path": "fitmkmutnbsuggestionbox",
-    "project": "5a44830f527ece000139e407",
-    "action": "https://requestb.in/vn0xvtvn",
+    "name": "testRequestBin",
+    "path": "testrequestbin",
+    "project": "59b0f9116d85560007c2823b",
     "_vid": 0,
     "revisions": "",
-    "created": "2017-12-28T05:37:46.373Z",
+    "created": "2017-12-29T06:09:47.753Z",
     "components": [
         {
-            "columns": [
-                {
-                    "pull": 0,
-                    "push": 0,
-                    "offset": 0,
-                    "width": 6,
-                    "components": [
-                        {
-                            "lockKey": true,
-                            "input": true,
-                            "tableView": true,
-                            "label": "Date",
-                            "key": "when",
-                            "placeholder": "",
-                            "format": "yyyy-MM-dd hh:mm a",
-                            "enableDate": true,
-                            "enableTime": true,
-                            "defaultDate": "moment()",
-                            "datepickerMode": "day",
-                            "datePicker": {
-                                "datepickerMode": "day",
-                                "maxDate": null,
-                                "minDate": null,
-                                "yearColumns": 5,
-                                "yearRows": 4,
-                                "maxMode": "year",
-                                "minMode": "day",
-                                "initDate": "",
-                                "startingDay": 0,
-                                "showWeeks": true
-                            },
-                            "timePicker": {
-                                "arrowkeys": true,
-                                "mousewheel": true,
-                                "readonlyInput": false,
-                                "showMeridian": true,
-                                "minuteStep": 1,
-                                "hourStep": 1
-                            },
-                            "protected": false,
-                            "persistent": true,
-                            "hidden": false,
-                            "clearOnHide": true,
-                            "validate": {
-                                "custom": "",
-                                "required": false
-                            },
-                            "type": "datetime",
-                            "labelPosition": "top",
-                            "tags": [],
-                            "conditional": {
-                                "eq": "",
-                                "when": null,
-                                "show": ""
-                            },
-                            "properties": {
-                                "": ""
-                            },
-                            "hideLabel": false,
-                            "disabled": true,
-                            "tooltip": "The current date and time. This is set automatically when your start the App and can not be changed."
-                        },
-                        {
-                            "lockKey": true,
-                            "hideLabel": false,
-                            "validate": {
-                                "required": true
-                            },
-                            "tooltip": "You will get a confirmation mail to this address after submission of your suggestion.",
-                            "properties": {
-                                "": ""
-                            },
-                            "conditional": {
-                                "eq": "",
-                                "when": null,
-                                "show": ""
-                            },
-                            "tags": [],
-                            "labelPosition": "top",
-                            "type": "email",
-                            "kickbox": {
-                                "enabled": false
-                            },
-                            "clearOnHide": true,
-                            "hidden": false,
-                            "persistent": true,
-                            "unique": false,
-                            "protected": false,
-                            "defaultValue": "",
-                            "suffix": "",
-                            "prefix": "",
-                            "placeholder": "Please enter your private EMail address here...",
-                            "key": "private_mail",
-                            "label": "Private Email address",
-                            "inputType": "email",
-                            "tableView": true,
-                            "input": true
-                        }
-                    ]
-                },
-                {
-                    "pull": 0,
-                    "push": 0,
-                    "offset": 0,
-                    "width": 6,
-                    "components": [
-                        {
-                            "lockKey": true,
-                            "input": true,
-                            "tableView": true,
-                            "inputType": "text",
-                            "inputMask": "",
-                            "label": "Name",
-                            "key": "who",
-                            "placeholder": "",
-                            "prefix": "",
-                            "suffix": "",
-                            "multiple": false,
-                            "defaultValue": "",
-                            "protected": false,
-                            "unique": false,
-                            "persistent": true,
-                            "hidden": false,
-                            "clearOnHide": true,
-                            "validate": {
-                                "customPrivate": false,
-                                "custom": "",
-                                "pattern": "",
-                                "maxLength": "",
-                                "minLength": "",
-                                "required": false
-                            },
-                            "conditional": {
-                                "eq": "",
-                                "when": null,
-                                "show": ""
-                            },
-                            "type": "textfield",
-                            "hideLabel": false,
-                            "labelPosition": "top",
-                            "tags": [],
-                            "properties": {
-                                "": ""
-                            },
-                            "disabled": true,
-                            "tooltip": "The name configured in the profile of your UserID.  This is set automatically when your start the App and can not be changed."
-                        }
-                    ]
-                }
-            ],
-            "clearOnHide": false,
-            "input": false,
-            "tableView": false,
-            "key": "columns",
-            "type": "columns",
-            "hideLabel": false,
-            "tags": [],
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
             "properties": {
                 "": ""
-            }
-        },
-        {
-            "columns": [
-                {
-                    "pull": 0,
-                    "push": 0,
-                    "offset": 0,
-                    "width": 6,
-                    "components": [
-                        {
-                            "lockKey": true,
-                            "input": true,
-                            "tableView": true,
-                            "label": "Suggestion regarding",
-                            "key": "regarding",
-                            "placeholder": "Please select an entry here...",
-                            "data": {
-                                "custom": "",
-                                "resource": "",
-                                "url": "",
-                                "json": "",
-                                "values": [
-                                    {
-                                        "label": "Building/Room/Area",
-                                        "value": "premise"
-                                    },
-                                    {
-                                        "label": "Curriculum",
-                                        "value": "curriculum"
-                                    },
-                                    {
-                                        "label": "Organization",
-                                        "value": "organization"
-                                    }
-                                ]
-                            },
-                            "dataSrc": "values",
-                            "valueProperty": "",
-                            "defaultValue": "",
-                            "refreshOn": "",
-                            "filter": "",
-                            "authenticate": false,
-                            "template": "<span>{{ item.label }}</span>",
-                            "multiple": false,
-                            "protected": false,
-                            "unique": false,
-                            "persistent": true,
-                            "hidden": false,
-                            "clearOnHide": true,
-                            "validate": {
-                                "required": true
-                            },
-                            "type": "select",
-                            "hideLabel": false,
-                            "labelPosition": "top",
-                            "tags": [],
-                            "conditional": {
-                                "eq": "",
-                                "when": null,
-                                "show": ""
-                            },
-                            "properties": {
-                                "": ""
-                            },
-                            "tooltip": "What is your suggestion about ?"
-                        }
-                    ]
-                },
-                {
-                    "pull": 0,
-                    "push": 0,
-                    "offset": 0,
-                    "width": 6,
-                    "components": [
-                        {
-                            "lockKey": true,
-                            "input": true,
-                            "tableView": true,
-                            "inputType": "text",
-                            "inputMask": "",
-                            "label": "Location",
-                            "key": "where",
-                            "placeholder": "Please enter if the suggestion is specific to a certain location...",
-                            "prefix": "",
-                            "suffix": "",
-                            "multiple": false,
-                            "defaultValue": "",
-                            "protected": false,
-                            "unique": false,
-                            "persistent": true,
-                            "hidden": false,
-                            "clearOnHide": true,
-                            "validate": {
-                                "customPrivate": false,
-                                "custom": "",
-                                "pattern": "",
-                                "maxLength": "",
-                                "minLength": "",
-                                "required": false
-                            },
-                            "conditional": {
-                                "eq": "",
-                                "when": null,
-                                "show": ""
-                            },
-                            "type": "textfield",
-                            "hideLabel": false,
-                            "labelPosition": "top",
-                            "tags": [],
-                            "properties": {
-                                "": ""
-                            },
-                            "tooltip": "Where does this suggestion apply to ? Main building ? Boarding building ? Green areas ? Street ? Campus entrance ? ..."
-                        }
-                    ]
-                }
-            ],
-            "clearOnHide": false,
-            "input": false,
-            "tableView": false,
-            "key": "columns2",
-            "type": "columns",
-            "hideLabel": false,
+            },
             "tags": [],
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "properties": {
-                "": ""
-            }
-        },
-        {
-            "tooltip": "What do you suggest ?",
-            "lockKey": true,
-            "rows": 5,
-            "input": true,
-            "tableView": true,
-            "label": "Suggestion",
-            "key": "what",
-            "placeholder": "And here goes what you suggest...",
-            "prefix": "",
-            "suffix": "",
-            "multiple": false,
-            "defaultValue": "",
-            "protected": false,
-            "persistent": true,
-            "hidden": false,
-            "wysiwyg": {
-                "width": "100%",
-                "height": "400px",
-                "uiColor": "#eeeeee",
-                "removeButtons": "Cut,Copy,Paste,Underline,Subscript,Superscript,Scayt,About",
-                "extraPlugins": "justify,font",
-                "toolbarGroups": [
-                    {
-                        "groups": [
-                            "basicstyles",
-                            "cleanup"
-                        ],
-                        "name": "basicstyles"
-                    },
-                    {
-                        "groups": [
-                            "list",
-                            "indent",
-                            "blocks",
-                            "align",
-                            "bidi",
-                            "paragraph",
-                            "-",
-                            "JustifyLeft",
-                            "JustifyCenter",
-                            "JustifyRight",
-                            "JustifyBlock"
-                        ],
-                        "name": "paragraph"
-                    },
-                    {
-                        "groups": [
-                            "links"
-                        ],
-                        "name": "links"
-                    },
-                    {
-                        "groups": [
-                            "insert"
-                        ],
-                        "name": "insert"
-                    },
-                    "/",
-                    {
-                        "groups": [
-                            "Styles",
-                            "Format",
-                            "Font",
-                            "FontSize"
-                        ],
-                        "name": "styles"
-                    },
-                    {
-                        "groups": [
-                            "colors"
-                        ],
-                        "name": "colors"
-                    },
-                    {
-                        "groups": [
-                            "clipboard",
-                            "undo"
-                        ],
-                        "name": "clipboard"
-                    },
-                    {
-                        "groups": [
-                            "find",
-                            "selection",
-                            "spellchecker",
-                            "editing"
-                        ],
-                        "name": "editing"
-                    },
-                    {
-                        "groups": [
-                            "mode",
-                            "document",
-                            "doctools"
-                        ],
-                        "name": "document"
-                    },
-                    {
-                        "groups": [
-                            "others"
-                        ],
-                        "name": "others"
-                    },
-                    {
-                        "groups": [
-                            "tools"
-                        ],
-                        "name": "tools"
-                    }
-                ]
-            },
-            "clearOnHide": true,
-            "validate": {
-                "custom": "",
-                "pattern": "",
-                "maxLength": "",
-                "minLength": 20,
-                "required": true
-            },
-            "type": "textarea",
-            "hideLabel": false,
             "labelPosition": "top",
-            "tags": [],
+            "hideLabel": false,
+            "type": "textfield",
             "conditional": {
                 "eq": "",
                 "when": null,
                 "show": ""
             },
-            "properties": {
-                "": ""
-            }
-        },
-        {
-            "lockKey": true,
-            "input": true,
-            "tableView": true,
-            "inputType": "text",
-            "inputMask": "",
-            "label": "URL for submission",
-            "key": "url",
-            "placeholder": "Please paste your URL here...",
-            "prefix": "",
-            "suffix": "",
-            "multiple": false,
-            "defaultValue": "",
-            "protected": false,
-            "unique": false,
-            "persistent": true,
-            "hidden": false,
-            "clearOnHide": true,
             "validate": {
                 "customPrivate": false,
                 "custom": "",
                 "pattern": "",
                 "maxLength": "",
                 "minLength": "",
-                "required": true
+                "required": false
             },
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "",
+            "key": "name",
+            "label": "Name",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true
+        },
+        {
+            "properties": {
+                "": ""
             },
-            "type": "textfield",
+            "tags": [],
             "labelPosition": "top",
-            "tags": [],
+            "hideLabel": false,
+            "type": "textfield",
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": ""
+            },
+            "validate": {
+                "customPrivate": false,
+                "custom": "",
+                "pattern": "",
+                "maxLength": "",
+                "minLength": "",
+                "required": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "",
+            "key": "message",
+            "label": "Message",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true
+        },
+        {
+            "custom": "var settings = {\n \"async\": true,\n \"crossDomain\": true,\n \"url\": \"https://requestb.in/1mvtofl1\",\n \"method\": \"POST\",\n \"headers\": {\n   \"content-type\": \"application/json\",\n   \"cache-control\": \"no-cache\"\n },\n \"processData\": false,\n \"data\": \"{\\n\\t\\\"name\\\": \" +form.submission.data.name+ \",\\n\\t\\\"message\\\": \" +form.submission.data.message+ \"\\n}\"\n}\n\n$.ajax(settings).done(function (data) {\nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\ndata: {    \nname: form.submission.data.name,  \nmessage: form.submission.data.message,    \n}\n} \n});",
             "properties": {
                 "": ""
             },
-            "tooltip": "Please paste your Logic Apps URL or your requestb.in URL here !",
-            "hideLabel": false
-        },
-        {
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": ""
+            },
+            "tags": [],
             "hideLabel": false,
-            "input": true,
-            "label": "Submit suggestion",
-            "tableView": false,
-            "key": "submit",
-            "size": "md",
-            "leftIcon": "",
-            "rightIcon": "",
-            "block": false,
-            "action": "custom",
-            "disableOnInvalid": false,
-            "theme": "primary",
             "type": "button",
-            "tags": [],
-            "conditional": {
-                "show": "",
-                "when": null,
-                "eq": ""
-            },
-            "properties": {
-                "": ""
-            },
-            "style": {
-                "margin-bottom": "20px"
-            },
-            "tooltip": "Send the suggestion to the box.",
-            "custom": "var settings = {\n  \"async\": true,\n  \"crossDomain\": true,\n  \"url\": \"https://requestb.in/1mvtofl1\",\n  \"method\": \"POST\",\n  \"headers\": {\n    \"content-type\": \"application/json\"\n    \"cache-control\": \"no-cache\"\n  },\n  \"processData\": false,\n  \"data\": \"{\\n\\t\\\"name\\\": \" +form.submission.data.name+ \",\\n\\t\\\"suggestion\\\": \" +form.submission.data.suggestion+ \"\\n}\"\n}\n\n$.ajax(settings).done(function (data) {\nvar value = JSON.stringify(data.value);   \nform.submission = {\n data: {    \nname: form.submission.data.name,  \nsuggesstion: form.submission.data.suggestion,    \noutput: value\n}\n} \n});"
-        },
-        {
-            "properties": {
-                "": ""
-            },
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "tags": [],
-            "hideLabel": false,
-            "type": "htmlelement",
-            "content": "",
-            "className": "",
-            "attrs": [
-                {
-                    "attr": "",
-                    "value": ""
-                }
-            ],
-            "tag": "p",
-            "input": false,
-            "key": "html"
-        },
-        {
-            "properties": {
-                "": ""
-            },
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "tags": [],
-            "hideLabel": false,
-            "type": "htmlelement",
-            "content": "",
-            "className": "",
-            "attrs": [
-                {
-                    "attr": "",
-                    "value": ""
-                }
-            ],
-            "tag": "p",
-            "input": false,
-            "key": "html2"
-        },
-        {
-            "properties": {
-                "": ""
-            },
-            "conditional": {
-                "eq": "",
-                "when": null,
-                "show": ""
-            },
-            "tags": [],
-            "hideLabel": false,
-            "type": "content",
-            "html": "<p>&nbsp;</p>\n\n<p>&nbsp;</p>\n",
-            "input": false,
-            "key": "content"
-        },
-        {
-            "tooltip": "What the submit to the specified URL returned.",
-            "lockKey": true,
-            "components": [
-                {
-                    "lockKey": true,
-                    "columns": [
-                        {
-                            "pull": 0,
-                            "push": 0,
-                            "offset": 0,
-                            "width": 2,
-                            "components": [
-                                {
-                                    "tooltip": "The HTTP returncode, 200 means OK, 3xx is a redirect, 4xx an authorization issue, 5xx some other error.",
-                                    "lockKey": true,
-                                    "hideLabel": false,
-                                    "disabled": true,
-                                    "properties": {
-                                        "": ""
-                                    },
-                                    "tags": [],
-                                    "labelPosition": "top",
-                                    "type": "textfield",
-                                    "conditional": {
-                                        "show": "",
-                                        "when": null,
-                                        "eq": ""
-                                    },
-                                    "validate": {
-                                        "required": false,
-                                        "minLength": "",
-                                        "maxLength": "",
-                                        "pattern": "",
-                                        "custom": "",
-                                        "customPrivate": false
-                                    },
-                                    "clearOnHide": true,
-                                    "hidden": false,
-                                    "persistent": true,
-                                    "unique": false,
-                                    "protected": false,
-                                    "defaultValue": "",
-                                    "multiple": false,
-                                    "suffix": "",
-                                    "prefix": "",
-                                    "placeholder": "After Submit...",
-                                    "key": "code",
-                                    "label": "HTTP Return code",
-                                    "inputMask": "",
-                                    "inputType": "text",
-                                    "tableView": true,
-                                    "input": true
-                                }
-                            ]
-                        },
-                        {
-                            "pull": 0,
-                            "push": 0,
-                            "offset": 0,
-                            "width": 10,
-                            "components": [
-                                {
-                                    "disabled": true,
-                                    "properties": {
-                                        "": ""
-                                    },
-                                    "tags": [],
-                                    "labelPosition": "top",
-                                    "hideLabel": false,
-                                    "type": "textfield",
-                                    "conditional": {
-                                        "show": "",
-                                        "when": null,
-                                        "eq": ""
-                                    },
-                                    "validate": {
-                                        "required": false,
-                                        "minLength": "",
-                                        "maxLength": "",
-                                        "pattern": "",
-                                        "custom": "",
-                                        "customPrivate": false
-                                    },
-                                    "clearOnHide": true,
-                                    "hidden": false,
-                                    "persistent": true,
-                                    "unique": false,
-                                    "protected": false,
-                                    "defaultValue": "",
-                                    "multiple": false,
-                                    "suffix": "",
-                                    "prefix": "",
-                                    "placeholder": "Will be shown after you submitted the suggestion...",
-                                    "key": "columns3Returnmessage",
-                                    "label": "HTTP Return message",
-                                    "inputMask": "",
-                                    "inputType": "text",
-                                    "tableView": true,
-                                    "input": true
-                                }
-                            ]
-                        }
-                    ],
-                    "hideLabel": false,
-                    "properties": {
-                        "": ""
-                    },
-                    "conditional": {
-                        "show": "",
-                        "when": null,
-                        "eq": ""
-                    },
-                    "tags": [],
-                    "type": "columns",
-                    "key": "message",
-                    "tableView": false,
-                    "input": false,
-                    "clearOnHide": false
-                },
-                {
-                    "input": true,
-                    "tableView": true,
-                    "label": "HTTP Response header",
-                    "key": "header",
-                    "placeholder": "Will be shown after you submitted the suggestion...",
-                    "prefix": "",
-                    "suffix": "",
-                    "rows": 5,
-                    "multiple": false,
-                    "defaultValue": "",
-                    "protected": false,
-                    "persistent": true,
-                    "hidden": false,
-                    "wysiwyg": false,
-                    "clearOnHide": true,
-                    "validate": {
-                        "required": false,
-                        "minLength": "",
-                        "maxLength": "",
-                        "pattern": "",
-                        "custom": ""
-                    },
-                    "type": "textarea",
-                    "hideLabel": false,
-                    "labelPosition": "top",
-                    "tags": [],
-                    "conditional": {
-                        "show": "",
-                        "when": null,
-                        "eq": ""
-                    },
-                    "properties": {
-                        "": ""
-                    },
-                    "lockKey": true,
-                    "tooltip": "The result \"additional infos\""
-                },
-                {
-                    "tooltip": "The result \"content\".",
-                    "lockKey": true,
-                    "rows": 8,
-                    "disabled": true,
-                    "properties": {
-                        "": ""
-                    },
-                    "conditional": {
-                        "show": "",
-                        "when": null,
-                        "eq": ""
-                    },
-                    "tags": [],
-                    "labelPosition": "top",
-                    "type": "textarea",
-                    "validate": {
-                        "required": false,
-                        "minLength": "",
-                        "maxLength": "",
-                        "pattern": "",
-                        "custom": ""
-                    },
-                    "clearOnHide": true,
-                    "wysiwyg": false,
-                    "hidden": false,
-                    "persistent": true,
-                    "protected": false,
-                    "defaultValue": "",
-                    "multiple": false,
-                    "suffix": "",
-                    "prefix": "",
-                    "placeholder": "Will be shown after you submitted the suggestion...",
-                    "key": "body",
-                    "label": "HTTP Response body",
-                    "tableView": true,
-                    "input": true,
-                    "hideLabel": false
-                }
-            ],
-            "properties": {
-                "": ""
-            },
-            "conditional": {
-                "show": "",
-                "when": null,
-                "eq": ""
-            },
-            "tags": [],
-            "hideLabel": false,
-            "breadcrumb": "default",
-            "type": "panel",
+            "theme": "primary",
+            "disableOnInvalid": false,
+            "action": "custom",
+            "block": false,
+            "rightIcon": "",
+            "leftIcon": "",
+            "size": "md",
+            "key": "submit",
             "tableView": false,
-            "theme": "default",
-            "title": "HTTP Result",
-            "input": false,
-            "key": "result",
-            "clearOnHide": false
+            "label": "Submit",
+            "input": true
         }
     ],
-    "owner": "594fd15f7684cc005c2280ae",
+    "owner": "59b0f7ea678919000775f784",
     "submissionAccess": [],
     "access": [
         {
             "type": "read_all",
             "roles": [
-                "5a44830f527ece000139e408",
-                "5a44830f527ece000139e409",
-                "5a44830f527ece000139e40a"
+                "59b0f9116d85560007c2823c",
+                "59b0f9116d85560007c2823d",
+                "59b0f9116d85560007c2823e"
             ]
         }
     ],
