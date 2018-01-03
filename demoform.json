@@ -512,7 +512,7 @@
                 "margin-bottom": "20px"
             },
             "tooltip": "Send the suggestion to the box.",
-            "custom": "var url = 'https://requestb.in/1mvtofl1?private_mail=';      \nurl += form.submission.data.private_mail;\nurl += '&what=';      \nurl += form.submission.data.what;\n$.ajax({url: url,\n        beforeSend: function (xhrObj) {\n          // Request headers  \n},\n        type: \"GET\"\n      }).done(function (data) {        \nvar value = JSON.stringify(data.value);   \nconsole.log(value);   \nform.submission = {\n data: {\nprivate_mail: form.submission.data.private_mail,  \nwhat: form.submission.data.what    \n}\n};  \n }).fail(function (error) {  \n console.log(error);   });"
+			"custom": "var url = \"https://requestb.in/yxqdx6yx\";\nurl += \"?private_mail=\" + document.getElementById('private_mail').value;\nurl += \"&what=\" + document.getElementById('what').value;\nvar xhttp = new XMLHttpRequest();\n\nxhttp.open(\"POST\",url,true);\nxhttp.send();",
         },
         {
             "properties": {
