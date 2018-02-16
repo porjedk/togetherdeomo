@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type='text/javascript'>
 			window.onload = function() {
-				var form = new FormioWizard(document.getElementById('formio'));
+				var form = new FormioForm(document.getElementById('formio'));
 				$.getJSON("./demoform.json", function(json) {
 					form.form = json;
 				});	
