@@ -8,10 +8,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type='text/javascript'>
 			window.onload = function() {
-				var jsonForm = $.getJSON("./demoform.json", function(json) {
-					form.form = json;
-				});
-				var form = Formio.createForm(document.getElementById('formio'), jsonForm);	
+				var jsonForm = 
+				var form = Formio.createForm(document.getElementById('formio'),
+				$.getJSON("./demoform.json"));	
 			};
 		</script>		
 	</head>
