@@ -10,7 +10,8 @@
 			window.onload = function() {
 				var jsonForm = 
 				var form = Formio.createForm(document.getElementById('formio'),
-				$.getJSON("./demoform.json"));	
+				$.getJSON("./demoform.json", function(json) {
+				}));	
 			};
 		</script>		
 	</head>
